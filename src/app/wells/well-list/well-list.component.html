@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <!-- add well -->
+            <app-well (messageEvent)="receiveMessage($event)" [childMessage]="fromParent"></app-well>
+            <!-- add well -->
+        </div>
+        <div class="right">
+            <!-- app well list -->
+            <table class="table table-striped" id="usersTable">
+                <thead class="thead-wells">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let w of wells; let i = index;" id="well_{{i}}" (click)="showInForm(w)">
+                        <td>{{w.name}}</td>
+                        <td>{{w.type}}</td>
+                        <td>{{w.source}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- app well list -->
+        </div>
+    </div>
+</body>
+</html>

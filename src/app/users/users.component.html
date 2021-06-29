@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>User Details</h1>
+    </header>
+    <table class="table table-striped" id="usersTable">
+        <thead class="thead">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of usersData">
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="toggleBool()">Toggle</button>
+    <br>
+    <h2>Toggle Content using ngIf</h2>
+    <div *ngIf="justAnotherBoolean; then elseTemplate">
+    </div>
+    <ng-template #elseTemplate>Else condition displaying</ng-template>
+</body>
+</html>

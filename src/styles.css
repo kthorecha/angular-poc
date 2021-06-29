@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+.thead{
+    background: rgb(203, 238, 243)
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main>div{
+    width: 50%;
+}
+tr:hover{
+    cursor: pointer;
+}
+#renderMainDiv{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.left-render{
+    width: 75%;
+    border: 1px solid blue;
+}
+.right-render{
+    width: 25%;
+    border: 1px solid red;
+}
+.right-render>h3{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.elemList>p{
+    margin: 2px;
+    background-color: rgb(85, 199, 219);
+}

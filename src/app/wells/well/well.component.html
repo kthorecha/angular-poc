@@ -1,0 +1,22 @@
+<div class="well-add">
+  <h1>Add Well</h1>
+  <form [formGroup]="userForm" (ngSubmit)="showData()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" formControlName="nameControl">
+    </div>
+    <div class="form-group">
+      <label for="wellType">Type:</label>
+      <input type="well-type" class="form-control" id="wellType" formControlName="typeControl">
+    </div>
+    <!-- dropdown -->
+    <div class="form-group">
+      <label for="sourceKey">SourceKey:</label>
+      <ngx-select id="sourceKey" formControlName="selectControl" [allowClear]="true" [items]="selectItems" optionValueField="optionId"
+        optionTextField="optionTitle" placeholder="Select...">
+      </ngx-select>
+    </div>
+    <br>
+    <button class="btn btn-primary" id="addWell" type="submit">Add Well</button>
+  </form>
+</div>
