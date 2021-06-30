@@ -33,4 +33,12 @@ tr:hover{
 .elemList>p{
     margin: 2px;
     background-color: rgb(85, 199, 219);
+    cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

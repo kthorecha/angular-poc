@@ -7,7 +7,7 @@ import { WellListComponent } from './wells/well-list/well-list.component';
 const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'wells', component: WellListComponent},
-  { path: 'render', component: RenderComponent}
+  { path: 'render', component: RenderComponent},
 ];
 
 @NgModule({
