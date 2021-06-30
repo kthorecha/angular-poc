@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-elements-header',
     template: `<style>
     header{
-        position: absolute;
+        position: relative;
         top: 0;
     }
     </style>
