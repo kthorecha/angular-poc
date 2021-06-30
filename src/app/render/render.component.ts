@@ -10,7 +10,6 @@ import { TableComponent } from '../elements/table.component';
 import { TextboxComponent } from '../elements/textbox.component';
 import { TimeComponent } from '../elements/time.component';
 import { RenderDirective } from './render.directive';
-import { Render } from './render';
 
 @Component({
   selector: 'app-render',
